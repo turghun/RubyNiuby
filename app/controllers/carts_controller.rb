@@ -13,6 +13,7 @@ class CartsController < ApplicationController
   # GET /carts/1
   # GET /carts/1.json
   def show
+# find cart at this id
     @cart = Cart.find(params[:id])
 
     respond_to do |format|
